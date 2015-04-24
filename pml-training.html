@@ -139,7 +139,7 @@ test_cm_rf &lt;- caret::confusionMatrix(table(test_pred_rf, test_df$classe))
 # calculate sample errors using the reciprocal of the accuracy
 in_sample_error_rf = 1 - train_cm_rf$overall[1]
 out_of_sample_error_rf = 1 - test_cm_rf$overall[1]</code></pre>
-<p>The out-of-sample error from the ‘rpart’ model is 0.0020393.</p>
+<p>The out-of-sample error from the Random Forest model is 0.0020393.</p>
 </div>
 <div id="validation-of-model" class="section level1">
 <h1>Validation of model</h1>
